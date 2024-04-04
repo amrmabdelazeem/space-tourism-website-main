@@ -1,0 +1,47 @@
+@import "/src/scss/variables", "/src/scss/utils";
+
+section {
+  color: $text-color;
+  display: grid;
+  padding: 24px;
+  
+  article {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // margin-bottom: 4.5rem;
+    gap: 16px;
+
+    h1 {
+      font-size: 80px;
+      line-height: 100px;
+    //   margin-top: 35px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 2.7px;
+      order: -1;
+      color: $secondary-color;
+    }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      color: $secondary-color;
+      letter-spacing: 1.2px;
+    }
+  }
+  .explore-btn {
+    background-color: $text-color;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: $primary-color;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    place-self: center;
+    margin-top: 85px;
+    cursor: pointer;
+  }
+}
