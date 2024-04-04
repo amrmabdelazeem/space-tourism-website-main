@@ -1,10 +1,8 @@
-import Navbar from "../../components/navbar/NavBar";
 import "./home.scss";
 
 export default function Home() {
   return (
     <section>
-    <Navbar/>
       <article>
         <h1>SPACE</h1>
         <h5>SO, YOU WANT TO TRAVEL TO</h5>

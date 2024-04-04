@@ -9,10 +9,17 @@
     padding: 0;
 }
 
+body, html{
+    margin: 0;
+    padding: 0;
+}
 
 
+.app{
+    // background-color: red;
+    // height: 100dvh;
+    position: relative;
+}
 body{
-    background-image: url('/assets/home/background-home-mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-color: black;
 }

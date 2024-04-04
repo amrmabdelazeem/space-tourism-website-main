@@ -1,7 +1,9 @@
+import './destination.scss'
+
 export default function Destination() {
     return (
-      <section>
+      <div className='destination'>
         <h1>Destination</h1>
-      </section>
+      </div>
     );
   }
