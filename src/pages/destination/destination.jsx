@@ -10,7 +10,7 @@ export default function Destination() {
     <main className="destination">
       <header>
         <span>0{currentIndex + 1}</span>
-        <h3>Pick your destination</h3>
+        <h1>Pick your destination</h1>
       </header>
       <img src={data.destinations[currentIndex].images.webp} alt="moon-image" />
       <ul>
@@ -24,16 +24,23 @@ export default function Destination() {
                   : { borderBottom: "3px solid #ffffff" }
               }
             >
-              <a href="">{dName}</a>
+              <a href="" style={names[currentIndex] !== dName ? { color: "#D0D6F9" } : {color:'#fff'}}>
+                {dName}
+              </a>
             </li>
           );
         })}
       </ul>
-      <h1>{names[currentIndex]}</h1>
+      <h2>{names[currentIndex]}</h2>
       <p>{data.destinations[currentIndex].description}</p>
       <hr />
       <article>
-        <h4>AVG. DISTANCE</h4>
+        <span>AVG. DISTANCE</span>
+        <h4>{data.destinations[currentIndex].distance}</h4>
+      </article>
+      <article>
+        <span>Est. travel time</span>
+        <h4>{data.destinations[currentIndex].travel}</h4>
       </article>
     </main>
   );
