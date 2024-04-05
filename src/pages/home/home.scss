@@ -1,20 +1,23 @@
 @import "/src/scss/variables", "/src/scss/utils";
 
-section {
+.home {
+  width: 100%;
+  min-width: 375px;
   color: $text-color;
   display: grid;
   place-items: center;
   padding: 24px;
-  background-image: url('assets/home/background-home-mobile.jpg');
+  background-image: url("assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: absolute;
   padding-top: 86px;
-  height: 100vh;
+  height: 677px;
+  min-height: 100vh;
   z-index: 0;
-  
 
-  article {
+  .home-content {
     width: 327px;
     display: flex;
     flex-direction: column;
@@ -23,16 +26,17 @@ section {
     gap: 16px;
 
     h1 {
-      font-size: 80px;
-      line-height: 100px;
-      //   margin-top: 35px;
-    }
-    h5 {
       font-size: 16px;
       font-weight: normal;
       letter-spacing: 2.7px;
-      order: -1;
+      // order: -1;
       color: $secondary-color;
+    }
+
+    h2 {
+      font-size: 80px;
+      line-height: 100px;
+      //   margin-top: 35px;
     }
     p {
       font-size: 15px;
