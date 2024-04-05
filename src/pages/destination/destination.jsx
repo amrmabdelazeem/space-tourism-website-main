@@ -6,6 +6,7 @@ export default function Destination() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const names = data.destinations.map((item) => item.name);
+
   return (
     <main className="destination">
       <header>
@@ -14,7 +15,7 @@ export default function Destination() {
       </header>
       <img src={data.destinations[currentIndex].images.webp} alt="moon-image" />
       <ul>
-        {names.map((dName) => {
+        {names.map((dName, index) => {
           return (
             <li
               key={dName}
@@ -24,7 +25,10 @@ export default function Destination() {
                   : { borderBottom: "3px solid #ffffff" }
               }
             >
-              <a href="" style={names[currentIndex] !== dName ? { color: "#D0D6F9" } : {color:'#fff'}}>
+              <a href="" onClick={(e)=>{
+                e.preventDefault();
+                setCurrentIndex(index);
+              }} style={names[currentIndex] !== dName ? { color: "#D0D6F9" } : {color:'#fff'}}>
                 {dName}
               </a>
             </li>
