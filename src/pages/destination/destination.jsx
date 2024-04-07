@@ -10,7 +10,7 @@ export default function Destination() {
   return (
     <main className="destination">
       <header>
-        <span>0{currentIndex + 1}</span>
+        <span>01</span>
         <h5>Pick your destination</h5>
       </header>
       <img src={data.destinations[currentIndex].images.webp} alt="moon-image" />
