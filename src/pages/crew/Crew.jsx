@@ -16,9 +16,16 @@ export default function Crew() {
       <article className="crew-info">
         <div className="slider-dots">
           {data.crew.map((member, index) => {
-            return <span className="slider-dot" key={member} onClick={()=>{
-                setCurrentIndex(index);
-            }}></span>;
+            return (
+              <span
+                className="slider-dot"
+                key={member.name}
+                onClick={() => {
+                  setCurrentIndex(index);
+                }}
+                style={currentIndex === index ? {backgroundColor:'#ffffff'} : {backgroundColor:'#979797'}}
+              ></span>
+            );
           })}
         </div>
         <h3> {data.crew[currentIndex].role}</h3>
