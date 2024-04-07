@@ -15,10 +15,11 @@ export default function Crew() {
       </article>
       <article className="crew-info">
         <div className="slider-dots">
-          <span className="slider-dot"></span>
-          <span className="slider-dot"></span>
-          <span className="slider-dot"></span>
-          <span className="slider-dot"></span>
+          {data.crew.map((member, index) => {
+            return <span className="slider-dot" key={member} onClick={()=>{
+                setCurrentIndex(index);
+            }}></span>;
+          })}
         </div>
         <h3> {data.crew[currentIndex].role}</h3>
         <h4>{data.crew[currentIndex].name}</h4>
