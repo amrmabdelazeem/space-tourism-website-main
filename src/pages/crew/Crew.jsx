@@ -6,6 +6,7 @@ export default function Crew() {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <main className="crew">
+    <img className="bg-moon" src="assets/crew/background-crew-mobile.jpg" alt="background-filter-moon" />
       <header>
         <span>02</span>
         <h5>Pick your crew</h5>
