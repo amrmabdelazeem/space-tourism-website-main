@@ -6,17 +6,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  //   height: 710px;
-  height: 100vh;
+    height: 710px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
 
   header {
     display: flex;
-    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 2.7px;
     font-size: 16px;
+    column-gap: 16px;
+    margin-bottom: 2rem;
 
     span {
       font-weight: bold;
@@ -24,17 +27,21 @@
     }
     h5 {
       color: $text-color;
+      font-weight: normal;
     }
   }
   .img-container {
+    margin-bottom: 34px;
     img {
       width: 100vw;
+      height: 170px;
     }
   }
   .img-changer {
     display: flex;
     column-gap: 16px;
     font-size: 16px;
+    margin-bottom: 26px;
     span {
       width: 40px;
       height: 40px;
@@ -59,7 +66,7 @@
       color: $secondary-color;
       letter-spacing: 2.36px;
       font-weight: normal;
-      margin-bottom: 8px;
+      margin-bottom: 9px;
     }
     h4 {
       font-size: 24px;
@@ -72,6 +79,7 @@
       font-size: 15px;
       line-height: 25px;
       color: $secondary-color;
+      text-indent: 15px;
     }
   }
 }
