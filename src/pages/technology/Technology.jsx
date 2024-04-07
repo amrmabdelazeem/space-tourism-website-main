@@ -1,7 +1,10 @@
+import { useState } from "react";
 import "./technology.scss";
 import data from "../../data.json";
 
 export default function Technology() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   return (
     <main className="tech">
       <header>
@@ -15,9 +18,9 @@ export default function Technology() {
         />
       </section>
       <section className="img-changer">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
+      {data.technology.map((tech, index)=>{
+        return <span key={tech.name} style={currentIndex === index ? {backgroundColor:'#fff', color:'#0B0D17'} : {backgroundColor:'transparent', color:'#fff'}}>{index+1}</span>
+      })}
       </section>
       <section className="terminology-paragraph">
         <h3>THE TERMINOLOGY…</h3>
