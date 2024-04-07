@@ -11,10 +11,10 @@ export default function Crew() {
         <span>02</span>
         <h5>Pick your crew</h5>
       </header>
-      <article className="crew-photo">
+      <section className="crew-photo">
         <img src={data.crew[currentIndex].images.webp} alt="crew" />
-      </article>
-      <article className="crew-info">
+      </section>
+      <section className="crew-info">
         <div className="slider-dots">
           {data.crew.map((member, index) => {
             return (
@@ -32,7 +32,7 @@ export default function Crew() {
         <h3> {data.crew[currentIndex].role}</h3>
         <h4>{data.crew[currentIndex].name}</h4>
         <p>{data.crew[currentIndex].bio}</p>
-      </article>
+      </section>
     </main>
   );
 }

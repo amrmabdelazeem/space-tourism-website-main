@@ -1,11 +1,77 @@
 @import "/src/scss/variables", "/src/scss/utils";
 
+.tech {
+  padding-top: 88px;
+  background-image: url("assets/technology/background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //   height: 710px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.tech{
-    padding-top: 88px;
-    background-image: url('assets/technology/background-technology-mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 710px;
+  header {
+    display: flex;
+    column-gap: 16px;
+    letter-spacing: 2.7px;
+    font-size: 16px;
+
+    span {
+      font-weight: bold;
+      color: $text-color-dark;
+    }
+    h5 {
+      color: $text-color;
+    }
+  }
+  .img-container {
+    img {
+      width: 100vw;
+    }
+  }
+  .img-changer {
+    display: flex;
+    column-gap: 16px;
+    font-size: 16px;
+    span {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border-radius: 50%;
+      color: $text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $primary-font;
+      letter-spacing: 1px;
+      border: 1px solid $text-color-grey;
+    }
+  }
+  .terminology-paragraph {
+    text-align: center;
+    color: $text-color;
+
+    h3 {
+      font-size: 14px;
+      font-family: $secondary-font;
+      color: $secondary-color;
+      letter-spacing: 2.36px;
+      font-weight: normal;
+      margin-bottom: 8px;
+    }
+    h4 {
+      font-size: 24px;
+      font-family: $primary-font;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      color: $secondary-color;
+    }
+  }
 }
