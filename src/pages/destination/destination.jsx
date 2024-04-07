@@ -11,7 +11,7 @@ export default function Destination() {
     <main className="destination">
       <header>
         <span>0{currentIndex + 1}</span>
-        <h1>Pick your destination</h1>
+        <h5>Pick your destination</h5>
       </header>
       <img src={data.destinations[currentIndex].images.webp} alt="moon-image" />
       <ul>
@@ -39,11 +39,11 @@ export default function Destination() {
       <p>{data.destinations[currentIndex].description}</p>
       <hr />
       <article>
-        <span>AVG. DISTANCE</span>
+        <h3>AVG. DISTANCE</h3>
         <h4>{data.destinations[currentIndex].distance}</h4>
       </article>
       <article>
-        <span>Est. travel time</span>
+        <h3>Est. travel time</h3>
         <h4>{data.destinations[currentIndex].travel}</h4>
       </article>
     </main>
