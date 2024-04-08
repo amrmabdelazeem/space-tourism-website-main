@@ -1,1 +1,32 @@
 @import "/src/scss/variables", "/src/scss/utils";
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  width: 254px;
+  height: 667px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-left: 32px;
+//   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  .route {
+    position: relative;
+    top: 118px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+
+    span {
+      font-weight: bold;
+      color: $text-color;
+    }
+    a {
+      font-weight: normal;
+      text-decoration: none;
+      color: $text-color;
+      text-transform: uppercase;
+      padding-left: 11px;
+    }
+  }
+}

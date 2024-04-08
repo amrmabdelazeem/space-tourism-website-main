@@ -7,7 +7,7 @@
   display: grid;
   place-items: center;
   padding: 24px;
-  background-image: url("assets/home/background-home-mobile.jpg");
+  background-image: url("/assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,7 +15,6 @@
   padding-top: 86px;
   height: 677px;
   min-height: 100vh;
-  z-index: 0;
 
   .home-content {
     width: 327px;

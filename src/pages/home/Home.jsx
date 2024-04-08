@@ -1,8 +1,10 @@
 import "./home.scss";
+import Sidebar from "../../components/navbar/sidebar/Sidebar";
 
 export default function Home() {
   return (
     <main className="home">
+    <Sidebar/>
       <section className="home-content">
         <h1>SPACE</h1>
         <h5>SO, YOU WANT TO TRAVEL TO</h5>
