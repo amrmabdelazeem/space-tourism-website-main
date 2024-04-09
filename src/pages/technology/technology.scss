@@ -1,4 +1,4 @@
-@import "/src/scss/variables", "/src/scss/utils";
+@import "/src/scss/variables", "/src/scss/utils", "/src/scss/mixins";
 
 .tech {
   padding-top: 88px;
@@ -68,16 +68,10 @@
       margin-bottom: 9px;
     }
     h4 {
-      font-size: 24px;
-      font-family: $primary-font;
-      font-weight: normal;
-      text-transform: uppercase;
-      margin-bottom: 16px;
+      @include subheading-text-h3;
     }
     p {
-      font-size: 15px;
-      line-height: 25px;
-      color: $secondary-color;
+      @include text-paragraph;
     }
   }
 }

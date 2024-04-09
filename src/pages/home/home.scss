@@ -1,8 +1,11 @@
-@import "/src/scss/variables", "/src/scss/utils";
+@import "/src/scss/variables", "/src/scss/utils", "/src/scss/mixins";
 
 .home {
   width: 100%;
   min-width: 375px;
+  height: 677px;
+  min-height: 100vh;
+  padding-top: 88px;
   color: $text-color;
   display: grid;
   place-items: center;
@@ -10,17 +13,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
-  padding-top: 88px;
-  height: 677px;
-  min-height: 100vh;
-
+  
   .home-content {
     width: 327px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    // margin-bottom: 4.5rem;
+    align-items: center;
     gap: 16px;
 
     h5 {
@@ -33,12 +31,9 @@
     h1 {
       font-size: 80px;
       line-height: 100px;
-      //   margin-top: 35px;
     }
     p {
-      font-size: 15px;
-      line-height: 25px;
-      color: $secondary-color;
+      @include text-paragraph;
     }
   }
   .explore-btn {
@@ -46,11 +41,11 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin-top: 60px;
+    align-self: baseline;
     color: $primary-color;
     border: none;
     font-size: 20px;
     letter-spacing: 1.25px;
-    margin-top: 85px;
-    cursor: pointer;
   }
 }

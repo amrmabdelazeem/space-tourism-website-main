@@ -1,6 +1,8 @@
-@import "/src/scss/variables", "/src/scss/utils";
+@import "/src/scss/variables", "/src/scss/utils", '/src/scss/mixins';
 
 .destination {
+  height: 850px;
+  min-height: 100vh;
   z-index: 0;
   padding-top: 88px;
   background-image: url("/assets/destination/background-destination-mobile.jpg");
@@ -11,9 +13,6 @@
   flex-direction: column;
   align-items: center;
   color: $text-color;
-  height: 850px;
-  min-height: 100vh;
-
 
   header {
     display: flex;
@@ -63,10 +62,7 @@
     font-family: $primary-font;
   }
   p {
-    text-align: center;
-    font-size: 15px;
-    line-height: 25px;
-    color:$secondary-color;
+    @include text-paragraph;
   }
 
   hr{
