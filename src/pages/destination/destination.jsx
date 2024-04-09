@@ -10,6 +10,7 @@ export default function Destination() {
   return (
     <main className="destination">
       <header>
+      
         <span>01</span>
         <h5>Pick your destination</h5>
       </header>
