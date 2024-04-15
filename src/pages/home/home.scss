@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
   .home-content {
     width: 327px;
     display: flex;
@@ -32,6 +32,7 @@
     h1 {
       font-size: 80px;
       line-height: 100px;
+      text-align: left;
     }
     p {
       @include text-paragraph;
@@ -49,10 +50,38 @@
     font-size: 20px;
     letter-spacing: 1.25px;
   }
+}
 
-
-  @media (min-width:$break-point-tablet) and (max-width:1439px) {
+@media (min-width: $break-point-tablet) and (max-width: 1439px) {
+  .home {
     height: 1024px;
     background-image: url("/assets/home/background-home-tablet.jpg");
+    padding-top: 202px;
+
+    .home-content {
+      width: 450px;
+      gap: 24px;
+
+      h5 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+      }
+      h1 {
+        font-size: 150px;
+        line-height: 150px;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+        color: $secondary-color;
+      }
+    }
+    .explore-btn {
+      width: 242px;
+      height: 242px;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
   }
 }
