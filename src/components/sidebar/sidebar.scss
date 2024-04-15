@@ -64,12 +64,23 @@
       font-size: 14px;
       letter-spacing: 2.36px;
       position: static;
+      height: 100%;
       display: flex;
+      align-items: center;
+
+      .active{
+        border-bottom: 3px solid #fff;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
       span{
         display: none;
       }
       a{
         padding-left: 0;
+        align-self: center;
       }
     }
   }

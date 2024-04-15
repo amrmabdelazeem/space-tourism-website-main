@@ -1,5 +1,5 @@
 import "./sidebar.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar({ onClose, hide }) {
   const routes = ["home", "destination", "crew", "technology"];
@@ -17,7 +17,7 @@ export default function Sidebar({ onClose, hide }) {
         return (
           <div className="route" key={route}>
             <span>0{index}</span>
-            <Link to={route}>{route}</Link>
+            <NavLink to={route} activeClassName="active">{route}</NavLink>
           </div>
         );
       })}
