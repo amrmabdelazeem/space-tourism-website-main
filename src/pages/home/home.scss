@@ -48,4 +48,9 @@
     font-size: 20px;
     letter-spacing: 1.25px;
   }
+
+
+  @media (min-width:$break-point-tablet) and (max-width:1439px) {
+    height: 1024px;
+  }
 }
