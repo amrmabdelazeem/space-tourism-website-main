@@ -5,17 +5,19 @@
   min-width: 375px;
   height: 677px;
   min-height: 100vh;
-  padding-top: 88px;
+  padding-top: 112px;
   color: $text-color;
   display: grid;
-  place-items: center;
+  justify-items: center;
   background-image: url("/assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  gap:  40px;
 
   .home-content {
     width: 327px;
+    height: 276px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,8 +45,6 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-top: 60px;
-    align-self: baseline;
     color: $primary-color;
     border: none;
     font-size: 20px;
@@ -55,6 +55,7 @@
 @media (min-width: $break-point-tablet) and (max-width: 1439px) {
   .home {
     height: 1024px;
+    justify-items: center;
     background-image: url("/assets/home/background-home-tablet.jpg");
     padding-top: 202px;
 
