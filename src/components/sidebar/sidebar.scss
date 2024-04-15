@@ -43,3 +43,34 @@
     }
   }
 }
+
+@media screen and (min-width:$break-point-tablet) {
+  .sidebar{
+    top: 0;
+    width: 450px;
+    height: 96px;
+    padding: 0 48px;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 0;
+    column-gap: 37px;
+    background-color: rgba($color: $text-color, $alpha: 4%);
+    .menu-btn{
+      display: none;
+    }
+
+    .route{
+      font-size: 14px;
+      letter-spacing: 2.36px;
+      position: static;
+      display: flex;
+      span{
+        display: none;
+      }
+      a{
+        padding-left: 0;
+      }
+    }
+  }
+}

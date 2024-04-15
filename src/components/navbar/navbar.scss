@@ -6,7 +6,6 @@
     padding: 33px 1.5rem 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: transparent;
     position: absolute;
     top: 0;
@@ -29,9 +28,12 @@
 @media screen and (min-width:$break-point-tablet) {
     .navbar{
         height: 96px;
+        margin-left: 39px;
+        padding-left: 0;
+        padding-top: 24px;
 
         .logo{
-            width: 48xpx;
+            width: 48px;
             height: 48px;
         }
 
