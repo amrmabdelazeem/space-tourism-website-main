@@ -26,6 +26,7 @@
       font-weight: normal;
       letter-spacing: 2.7px;
       order: -1;
+      color: $secondary-color;
     }
 
     h1 {
@@ -52,5 +53,6 @@
 
   @media (min-width:$break-point-tablet) and (max-width:1439px) {
     height: 1024px;
+    background-image: url("/assets/home/background-home-tablet.jpg");
   }
 }
