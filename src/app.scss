@@ -16,11 +16,12 @@
     main{
         padding-left: 24px;
         padding-right: 24px;
+
     }
 
-    // @media screen and (min-width:$break-point-tablet) {
-    //     main{
-    //         padding-left: 39px;
-    //     }
-    // }
+    @media screen and (min-width:$break-point-tablet) {
+        main{
+            padding-left: 39px;
+        }
+    }
 }

@@ -90,3 +90,16 @@
     }
   }
 }
+
+@media screen and (min-width: $break-point-tablet) and (max-width: 1439px) {
+ .destination{
+  width: 768px;
+  height: 1024px;
+  background-image: url("/assets/destination/background-destination-tablet.jpg");
+  padding-top: 136px;
+
+  header{
+    align-self: start;
+  }
+ } 
+}
