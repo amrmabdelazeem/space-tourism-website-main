@@ -70,7 +70,6 @@
 
       .active{
         border-bottom: 3px solid $text-color;
-        height: 100%;
         display: flex;
         align-items: center;
       }
@@ -80,7 +79,9 @@
       }
       a{
         padding-left: 0;
-        align-self: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
       }
     }
   }
