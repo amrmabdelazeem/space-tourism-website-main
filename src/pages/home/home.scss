@@ -14,6 +14,7 @@
   background-size: cover;
   background-position: center;
   gap:  40px;
+  position: relative;
 
   .home-content {
     width: 327px;
@@ -54,6 +55,7 @@
 
 @media (min-width: $break-point-tablet) and (max-width: 1439px) {
   .home {
+    width: 768px;
     height: 1024px;
     justify-items: center;
     background-image: url("/assets/home/background-home-tablet.jpg");
