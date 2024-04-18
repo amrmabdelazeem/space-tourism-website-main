@@ -10,7 +10,6 @@ export default function Destination() {
   return (
     <main className="destination">
       <header>
-      
         <span>01</span>
         <h5>Pick your destination</h5>
       </header>
@@ -26,10 +25,14 @@ export default function Destination() {
                   : { borderBottom: "3px solid #ffffff" }
               }
             >
-              <a href="" onClick={(e)=>{
-                e.preventDefault();
-                setCurrentIndex(index);
-              }} style={names[currentIndex] !== dName ? { color: "#D0D6F9" } : {color:'#fff'}}>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  setCurrentIndex(index);
+                }}
+                style={names[currentIndex] !== dName ? { color: "#D0D6F9" } : { color: "#fff" }}
+              >
                 {dName}
               </a>
             </li>
@@ -39,14 +42,16 @@ export default function Destination() {
       <h2>{names[currentIndex]}</h2>
       <p>{data.destinations[currentIndex].description}</p>
       <hr />
-      <article>
-        <h3>AVG. DISTANCE</h3>
-        <h4>{data.destinations[currentIndex].distance}</h4>
-      </article>
-      <article>
-        <h3>Est. travel time</h3>
-        <h4>{data.destinations[currentIndex].travel}</h4>
-      </article>
+      <section className="articles">
+        <article>
+          <h3>AVG. DISTANCE</h3>
+          <h4>{data.destinations[currentIndex].distance}</h4>
+        </article>
+        <article>
+          <h3>Est. travel time</h3>
+          <h4>{data.destinations[currentIndex].travel}</h4>
+        </article>
+      </section>
     </main>
   );
 }

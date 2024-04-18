@@ -80,12 +80,13 @@
       letter-spacing: 2.36px;
       color: $secondary-color;
       font-family: $secondary-font;
+      font-weight: normal;
     }
     h4 {
       font-size: 28px;
-      margin-top: 10px;
-      font-weight: normal;
+      margin-top: 12px;
       font-family: $primary-font;
+      font-weight: normal;
     }
   }
 }
@@ -127,18 +128,29 @@
         }
       }
     }
-    h2{
+    h2 {
       font-size: 80px;
     }
-    p{
+    p {
       font-size: 16px;
       line-height: 28px;
-      margin: 0 51px 49px;
+      margin: 0 58px 49px;
     }
 
-    hr{
+    hr {
       width: 573px;
       margin: 0 0 28px;
+    }
+    .articles{
+      width: 573px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:  100px;
+
+      article{
+        margin-bottom: 0;
+      }
     }
   }
 }
