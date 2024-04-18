@@ -9,7 +9,7 @@ export default function Crew() {
     <div className="bg-moon-container"></div>
       <header>
         <span>02</span>
-        <h5>Pick your crew</h5>
+        <h5>Meet your crew</h5>
       </header>
       <section className="crew-photo">
         <img src={data.crew[currentIndex].images.webp} alt="crew" />
