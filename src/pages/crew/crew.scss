@@ -40,8 +40,8 @@
     }
   }
   .crew-photo {
-    width: 327px;
-    height: 223px;
+    // width: 327px;
+    // height: 223px;
     display: grid;
     place-content: center;
     border-bottom: 2px solid $text-color-dark;
@@ -121,8 +121,8 @@
       }
     }
     .crew-photo{
-      width: 456.37px;
-      height: 572px;
+      // width: 100%;
+      
       order: 1;
       margin-bottom: 0;
       border-bottom: none;
