@@ -25,4 +25,11 @@
             padding-right: 39px;
         }
     }
+
+    @media screen and (min-width:$break-point-desktop) {
+        main{
+            padding-left: 55px;
+            padding-right: 55px;
+        }
+    }
 }
