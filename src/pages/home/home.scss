@@ -55,7 +55,7 @@
 
 @media screen and (min-width: $break-point-tablet) and (max-width: 1439px) {
   .home {
-    width: 768px;
+    min-width: 768px;
     height: 1024px;
     justify-items: center;
     background-image: url("/assets/home/background-home-tablet.jpg");
@@ -90,4 +90,8 @@
       bottom: 90px;
     }
   }
+}
+
+@media screen and (min-width:1440px) {
+  
 }
