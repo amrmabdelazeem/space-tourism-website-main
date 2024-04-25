@@ -13,6 +13,7 @@ export default function Sidebar({ onClose, hide }) {
           </g>
         </svg>
       </button>
+      <div className="hr"></div>
       {routes.map((route, index) => {
         return (
           <div className="route" key={route}>

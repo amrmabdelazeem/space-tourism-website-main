@@ -59,6 +59,14 @@
     .menu-btn{
       display: none;
     }
+    .hr{
+      position: absolute;
+      left: -440px;
+      width: 473px;
+      display: block;
+      height: 1px;
+      background-color: $text-color;
+  }
 
     .route{
       font-size: 14px;
@@ -91,5 +99,19 @@
   .sidebar{
     width: 830px;
     margin-top: 40px;
+    padding-left: 123px;
+    column-gap: 48px;
+    backdrop-filter: blur(4%);
+
+    .route{
+      
+      span{
+        display: block;
+      }
+
+      a{
+        padding-left: 14px;
+      }
+    }
   }
 }

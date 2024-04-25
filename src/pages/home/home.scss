@@ -95,5 +95,9 @@
 @media screen and (min-width:$break-point-desktop) {
   .home{
     height: 900px;
+    background-image: url("/assets/home/background-home-desktop.jpg");
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    align-items: center;
   }
 }
