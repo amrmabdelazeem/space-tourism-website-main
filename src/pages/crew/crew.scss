@@ -1,6 +1,8 @@
 @import "/src/scss/variables", "/src/scss/utils", "/src/scss/mixins";
 
 .crew {
+  width: 100%;
+  min-width: 375px;
   height: 710px;
   min-height: 100vh;
   color: $text-color;
@@ -17,6 +19,7 @@
     height: 100%;
     background-image: url('/assets/crew/background-crew-mobile.jpg');
     background-repeat: no-repeat;
+    background-size: 100%;
     filter: brightness(35%);
     z-index: -1;
   }
@@ -85,7 +88,7 @@
 
 @media screen and (min-width: $break-point-tablet) and (max-width:1439px){
   .crew{
-    width: 768px;
+    min-width: 768px;
     height: 1024px;
     padding-top: 136px;
     position: relative;
