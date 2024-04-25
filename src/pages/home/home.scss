@@ -97,7 +97,30 @@
     height: 900px;
     background-image: url("/assets/home/background-home-desktop.jpg");
     grid-template-columns: 1fr 1fr;
-    place-content: center;
+    place-content: end;
     align-items: center;
+    padding-bottom: 131px;
+
+    .home-content{
+      width: 450px;
+      height: 382px;
+      gap: 24px;
+      align-items: start;
+
+      h5{
+        font-size: 28px;
+        letter-spacing: 4.72px;
+      }
+      h1{
+        font-size: 150px;
+        line-height: normal;
+      }
+      p{
+        font-size: 18px;
+        line-height: 32px;
+        text-align: left;
+
+      }
+    }
   }
 }

@@ -65,7 +65,8 @@
       width: 473px;
       display: block;
       height: 1px;
-      background-color: $text-color;
+      background-color: rgba($color: $text-color, $alpha: 0.2);
+      opacity: .5;
   }
 
     .route{
