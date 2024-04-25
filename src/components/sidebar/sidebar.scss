@@ -86,3 +86,10 @@
     }
   }
 }
+
+@media screen and (min-width:$break-point-desktop) {
+  .sidebar{
+    width: 830px;
+    margin-top: 40px;
+  }
+}

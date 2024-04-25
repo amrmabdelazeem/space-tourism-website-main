@@ -30,7 +30,6 @@
         width: 729px;
         margin-left: 39px;
         padding-left: 0;
-        padding-top: 24px;
 
         .logo{
             width: 48px;
@@ -46,8 +45,9 @@
 @media screen and (min-width: $break-point-desktop) {
     .navbar{
         width: 1385px;
+        height: 96px;
         margin-top: 40px;
         padding-left: 0;
-        right: 0;
+        margin-left:55px ;
     }
 }
