@@ -1,9 +1,7 @@
-import { useState } from "react";
 import "./sidebar.scss";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar({ onClose, hide }) {
-  const [linkIndex, setLinkIndex] = useState(0);
   const routes = ["home", "destination", "crew", "technology"];
   return (
     <div className="sidebar" style={{ display: hide ? "flex" : "none" }} onClick={onClose}>
