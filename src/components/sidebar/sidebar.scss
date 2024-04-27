@@ -78,11 +78,11 @@
       display: flex;
       align-items: center;
 
-      // .active{
-      //   border-bottom: 3px solid $text-color;
-      //   display: flex;
-      //   align-items: center;
-      // }
+      .active{
+        border-bottom: 3px solid $text-color;
+        display: flex;
+        align-items: center;
+      }
 
       span{
         display: none;
@@ -106,13 +106,15 @@
     backdrop-filter: blur(4%);
 
     .route{
-      
-      span{
-        display: block;
-      }
 
       a{
         padding-left: 14px;
+        display: flex;
+        padding-left: 0;
+
+        span{
+          display: block;
+        }
       }
     }
   }
