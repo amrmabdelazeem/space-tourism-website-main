@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "./sidebar.scss";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar({ onClose, hide }) {
+  const [linkIndex, setLinkIndex] = useState(0);
   const routes = ["home", "destination", "crew", "technology"];
   return (
     <div className="sidebar" style={{ display: hide ? "flex" : "none" }} onClick={onClose}>
@@ -17,8 +19,10 @@ export default function Sidebar({ onClose, hide }) {
       {routes.map((route, index) => {
         return (
           <div className="route" key={route}>
-            <span>0{index}</span>
-            <NavLink to={route} activeClassName="active">{route}</NavLink>
+            <NavLink to={route}>
+              <span>0{index}</span>
+              {route}
+            </NavLink>
           </div>
         );
       })}
