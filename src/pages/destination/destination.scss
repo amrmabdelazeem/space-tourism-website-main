@@ -72,29 +72,29 @@
       p {
         @include text-paragraph;
       }
-    }
-    hr {
-      // background-color: $text-color-dark;
-      width: 100%;
-      border: 1px solid $text-color-dark;
-      margin: 2rem 0;
-    }
-    .article {
-      text-align: center;
-      margin-bottom: 2rem;
-      text-transform: uppercase;
-      h3 {
-        font-size: 14px;
-        letter-spacing: 2.36px;
-        color: $secondary-color;
-        font-family: $secondary-font;
-        font-weight: normal;
+      hr {
+        // background-color: $text-color-dark;
+        width: 100%;
+        border: 1px solid $text-color-dark;
+        margin: 2rem 0;
       }
-      h4 {
-        font-size: 28px;
-        margin-top: 12px;
-        font-family: $primary-font;
-        font-weight: normal;
+      .article {
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        h3 {
+          font-size: 14px;
+          letter-spacing: 2.36px;
+          color: $secondary-color;
+          font-family: $secondary-font;
+          font-weight: normal;
+        }
+        h4 {
+          font-size: 28px;
+          margin-top: 12px;
+          font-family: $primary-font;
+          font-weight: normal;
+        }
       }
     }
   }
@@ -146,20 +146,20 @@
           line-height: 28px;
           margin: 0 58px 49px;
         }
-      }
-      hr {
-        width: 573px;
-        margin: 0 0 28px;
-      }
-      .articles {
-        width: 573px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
+        hr {
+          width: 573px;
+          margin: 0 0 28px;
+        }
+        .articles {
+          width: 573px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 100px;
 
-        article {
-          margin-bottom: 0;
+          article {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -172,7 +172,7 @@
     padding-top: 212px;
     background-image: url("/assets/destination/background-destination-desktop.jpg");
 
-    header{
+    header {
       align-self: flex-start;
       margin-left: 165.6px - 55px;
       gap: 28px;
@@ -180,7 +180,7 @@
       letter-spacing: 4.72px;
     }
 
-    .main-content{
+    .main-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
@@ -188,46 +188,48 @@
       margin-left: 230px - 55px;
       margin-top: 64px;
 
-      img{
+      img {
         width: 445px;
         height: 445px;
         margin-bottom: 0;
         margin-top: 33px;
       }
 
-      .content-container{
+      .content-container {
         width: 445px;
         height: 472px;
         align-self: flex-start;
         align-items: normal;
-        ul{
+        ul {
           column-gap: 36px;
           margin-bottom: 37px;
-          li{
+          li {
             padding-bottom: 12px;
-            a{
+            a {
               font-size: 16px;
               letter-spacing: 2.7px;
             }
           }
         }
-        h2{
+        h2 {
           font-size: 100px;
           margin-bottom: 14px;
         }
-        p{
+        p {
           font-size: 18px;
           line-height: 32px;
           text-align: left;
         }
-      }
-
-
-      .articles{
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        
+        hr{
+          margin: 58px 0 28px;
+        }
+        .articles {
+          display: flex;
+          column-gap: 79px;
+          .article{
+            text-align: left;
+          }
+        }
       }
     }
   }

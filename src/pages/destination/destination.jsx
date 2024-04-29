@@ -44,16 +44,16 @@ export default function Destination() {
           <h2>{names[currentIndex]}</h2>
           <p>{data.destinations[currentIndex].description}</p>
           <hr />
-        <section className="articles">
-          <article className="article">
-            <h3>AVG. DISTANCE</h3>
-            <h4>{data.destinations[currentIndex].distance}</h4>
-          </article>
-          <article className="article">
-            <h3>Est. travel time</h3>
-            <h4>{data.destinations[currentIndex].travel}</h4>
-          </article>
-        </section>
+          <section className="articles">
+            <article className="article">
+              <h3>AVG. DISTANCE</h3>
+              <h4>{data.destinations[currentIndex].distance}</h4>
+            </article>
+            <article className="article">
+              <h3>Est. travel time</h3>
+              <h4>{data.destinations[currentIndex].travel}</h4>
+            </article>
+          </section>
         </article>
       </section>
     </main>
