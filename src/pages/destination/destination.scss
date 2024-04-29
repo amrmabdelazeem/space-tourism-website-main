@@ -30,6 +30,7 @@
     h5 {
       text-transform: uppercase;
       color: $text-color;
+      font-weight: normal;
     }
   }
   .main-content {
@@ -170,5 +171,39 @@
     height: 900px;
     padding-top: 212px;
     background-image: url("/assets/destination/background-destination-desktop.jpg");
+
+    header{
+      align-self: flex-start;
+      margin-left: 165.6px - 55px;
+      gap: 28px;
+      font-size: 28px;
+      letter-spacing: 4.72px;
+    }
+
+    .main-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 157px;
+      margin-left: 230px - 55px;
+      margin-top: 64px;
+
+      img{
+        width: 445px;
+        height: 445px;
+        margin-bottom: 0;
+        margin-top: 33px;
+      }
+
+      .content-container{
+        align-self: flex-start;
+      }
+
+      .articles{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        
+      }
+    }
   }
 }
