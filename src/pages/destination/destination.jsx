@@ -43,8 +43,7 @@ export default function Destination() {
           </ul>
           <h2>{names[currentIndex]}</h2>
           <p>{data.destinations[currentIndex].description}</p>
-        </article>
-        <hr />
+          <hr />
         <section className="articles">
           <article className="article">
             <h3>AVG. DISTANCE</h3>
@@ -55,6 +54,7 @@ export default function Destination() {
             <h4>{data.destinations[currentIndex].travel}</h4>
           </article>
         </section>
+        </article>
       </section>
     </main>
   );

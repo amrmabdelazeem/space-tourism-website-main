@@ -183,7 +183,8 @@
     .main-content{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 157px;
+      grid-template-rows: 1fr;
+      column-gap: 157px;
       margin-left: 230px - 55px;
       margin-top: 64px;
 
@@ -195,8 +196,32 @@
       }
 
       .content-container{
+        width: 445px;
+        height: 472px;
         align-self: flex-start;
+        align-items: normal;
+        ul{
+          column-gap: 36px;
+          margin-bottom: 37px;
+          li{
+            padding-bottom: 12px;
+            a{
+              font-size: 16px;
+              letter-spacing: 2.7px;
+            }
+          }
+        }
+        h2{
+          font-size: 100px;
+          margin-bottom: 14px;
+        }
+        p{
+          font-size: 18px;
+          line-height: 32px;
+          text-align: left;
+        }
       }
+
 
       .articles{
         display: flex;
