@@ -151,5 +151,15 @@
       font-size: 28px;
       letter-spacing: 4.72px;
     }
+    .main-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      .crew-photo{
+        order: 2;
+        margin: 0;
+      }
+    }
   }
 }
