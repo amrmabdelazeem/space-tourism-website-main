@@ -135,7 +135,7 @@
     }
   }
 }
-@media screen and (max-width: $break-point-desktop) {
+@media screen and (min-width: $break-point-desktop) {
   .crew {
     height: 900px;
     padding-top: 212px;
