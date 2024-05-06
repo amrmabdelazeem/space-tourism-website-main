@@ -12,12 +12,12 @@
   align-items: center;
   position: relative;
 
-  .bg-moon-container{
+  .bg-moon-container {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/crew/background-crew-mobile.jpg');
+    background-image: url("/assets/crew/background-crew-mobile.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     filter: brightness(35%);
@@ -86,79 +86,115 @@
   }
 }
 
-@media screen and (min-width: $break-point-tablet) and (max-width:1439px){
-  .crew{
+@media screen and (min-width: $break-point-tablet) and (max-width: 1439px) {
+  .crew {
     min-width: 768px;
     height: 1024px;
     padding-top: 136px;
     position: relative;
 
-    .bg-moon-container{
+    .bg-moon-container {
       background-image: url("/assets/crew/background-crew-tablet.jpg");
       filter: brightness(55%);
     }
-    header{
+    header {
       letter-spacing: 3.38px;
       font-size: 20px;
       align-self: flex-start;
       margin-bottom: 60px;
     }
-    .crew-info{
+    .crew-info {
       order: 0;
 
-      h3{
+      h3 {
         font-size: 24px;
       }
-      h4{
+      h4 {
         font-size: 40px;
       }
-      p{
+      p {
         font-size: 16px;
         line-height: 28px;
         margin: 0 (156px-39px) 40px;
       }
 
-      .slider-dots{
+      .slider-dots {
         order: 2;
         margin-bottom: 40px;
       }
     }
-    .crew-photo{
-      // width: 100%;
-      
+    .crew-photo {
       order: 1;
       margin-bottom: 0;
       border-bottom: none;
 
-      img{
+      img {
         width: 100%;
         height: 527px;
       }
     }
-
   }
 }
-@media screen and (max-width: $break-point-desktop){
-  .crew{
+@media screen and (max-width: $break-point-desktop) {
+  .crew {
     height: 900px;
     padding-top: 212px;
-    background-image: url('/assets/crew/background-crew-desktop.jpg');
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
 
-    header{
+    header {
       align-self: flex-start;
-      margin-left: 165.6px - 55px;
       gap: 24px;
       font-size: 28px;
       letter-spacing: 4.72px;
+      margin-bottom: 154px;
+      margin-left: 165.6px - 55px;
     }
-    .main-content{
+    .main-content {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
       grid-template-rows: 1fr;
+      margin-left: 165.6px - 55px;
 
-      .crew-photo{
+      .crew-photo {
         order: 2;
         margin: 0;
+        border-bottom: none;
+        width: 568.07px;
+        overflow: hidden;
+
+        img {
+          width: auto;
+          height: 702px;
+          position: absolute;
+          top: 198px;
+        }
+      }
+      .crew-info {
+        align-items: start;
+        width: 100%;
+
+        .slider-dots {
+          order: 1;
+          .slider-dot {
+            width: 15px;
+            height: 15px;
+          }
+        }
+        h3 {
+          font-size: 32px;
+          margin-bottom: 15px;
+        }
+        h4 {
+          font-size: 56px;
+          margin-bottom: 27px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 32px;
+          text-align: left;
+          padding-right: 12rem;
+          margin-bottom: 120px;
+        }
       }
     }
   }
