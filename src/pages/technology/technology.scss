@@ -123,6 +123,51 @@
 }
 @media screen and (min-width:$break-point-desktop){
   .tech{
-    
+    padding-top: 212px;
+    height: 900px;
+    background-image: url('/assets/technology/background-technology-desktop.jpg');
+
+    header{
+      align-self: flex-start;
+      margin-left: 165.6px - 55px;
+      gap: 24px;
+      font-size: 28px;
+      letter-spacing: 4.72px;
+      margin-bottom: 26px;
+    }
+    .main-content{
+      display: grid;
+      grid-template-columns: .1fr .8fr 1fr;
+      .img-container{
+        width: 515px;
+        height: 527px;
+        margin-bottom: 0;
+        order: 1;
+      }
+      .img-changer{
+        flex-direction: column;
+        order: -1;
+        font-size: 32px;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+        gap: 32px;
+        margin-left: 165.6px - 55px;
+        margin-top: 137px;
+
+        span{
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .terminology-paragraph{
+        text-align: left;
+        margin-top: 137px;
+
+        h3{
+          font-size: 16px;
+          letter-spacing: 2.7px;
+        }
+      }
+    }
   }
 }
