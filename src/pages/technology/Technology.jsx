@@ -5,6 +5,7 @@ import data from "../../data.json";
 export default function Technology() {
   const [currentIndex, setCurrentIndex] = useState(0);
   console.log(currentIndex);
+  console.log(screen.width);
 
   return (
     <main className="tech">
@@ -13,9 +14,9 @@ export default function Technology() {
         <h5>SPACE LAUNCH 101</h5>
       </header>
       <section className="main-content">
-        <section className="img-container">
-          <img src={data.technology[currentIndex].images.landscape} alt="image-preview" />
-        </section>
+      <section className="img-container">
+            <img src={data.technology[currentIndex].images.portrait} alt="image-preview" />
+          </section>
         <section className="img-changer">
           {data.technology.map((tech, index) => {
             return (
