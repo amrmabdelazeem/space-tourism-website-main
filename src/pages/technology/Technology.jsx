@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./technology.scss";
 import data from "../../data.json";
 
 export default function Technology() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
   console.log(currentIndex);
-  console.log(screen.width);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    //remove eventlistener to avoid memory leaks
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <main className="tech">
       <header>
@@ -14,9 +25,12 @@ export default function Technology() {
         <h5>SPACE LAUNCH 101</h5>
       </header>
       <section className="main-content">
-      <section className="img-container">
+        <section className="img-container">
+          {screenSize > 1439 ? 
             <img src={data.technology[currentIndex].images.portrait} alt="image-preview" />
-          </section>
+            :
+            <img src={data.technology[currentIndex].images.landscape} alt="image-preview" />}
+        </section>
         <section className="img-changer">
           {data.technology.map((tech, index) => {
             return (
