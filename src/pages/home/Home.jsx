@@ -12,9 +12,11 @@ export default function Home() {
           truly out of this world experience!
         </p>
       </section>
-      <button className="explore-btn" role="button" tabIndex="1">
-        EXPLORE
-      </button>
+      <div className="btn-container">
+        <button className="explore-btn" role="button" tabIndex="1">
+          EXPLORE
+        </button>
+      </div>
     </main>
   );
 }

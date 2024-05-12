@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  gap:  40px;
+  gap: 40px;
   position: relative;
 
   .home-content {
@@ -41,15 +41,17 @@
       @include text-paragraph;
     }
   }
-  .explore-btn {
-    background-color: $text-color;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    color: $primary-color;
-    border: none;
-    font-size: 20px;
-    letter-spacing: 1.25px;
+  .btn-container {
+    .explore-btn {
+      background-color: $text-color;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      color: $primary-color;
+      border: none;
+      font-size: 20px;
+      letter-spacing: 1.25px;
+    }
   }
 }
 
@@ -81,19 +83,21 @@
         color: $secondary-color;
       }
     }
-    .explore-btn {
-      width: 242px;
-      height: 242px;
-      font-size: 32px;
-      letter-spacing: 2px;
-      position: absolute;
-      bottom: 90px;
+    .btn-container {
+      .explore-btn {
+        width: 242px;
+        height: 242px;
+        font-size: 32px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 90px;
+      }
     }
   }
 }
 
-@media screen and (min-width:$break-point-desktop) {
-  .home{
+@media screen and (min-width: $break-point-desktop) {
+  .home {
     height: 900px;
     background-image: url("/assets/home/background-home-desktop.jpg");
     grid-template-columns: 1fr 1fr;
@@ -101,25 +105,46 @@
     align-items: center;
     padding-bottom: 131px;
 
-    .home-content{
+    .home-content {
       width: 450px;
       height: 382px;
       gap: 24px;
       align-items: start;
 
-      h5{
+      h5 {
         font-size: 28px;
         letter-spacing: 4.72px;
       }
-      h1{
+      h1 {
         font-size: 150px;
         line-height: normal;
       }
-      p{
+      p {
         font-size: 18px;
         line-height: 32px;
         text-align: left;
+      }
+    }
+    .btn-container {
+      // width: 450px;
+      // height: 450px;
+      width: 274px;
+      height: 274px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.4s;
 
+      .explore-btn {
+        width: 274px;
+        height: 274px;
+        cursor: pointer;
+      }
+      &:hover{
+        background-color: #979797;
+        width: 450px;
+        height: 450px;
       }
     }
   }
