@@ -110,7 +110,10 @@
       a{
         padding-left: 14px;
         padding-left: 0;
-
+        
+        &:hover{
+          border-bottom: 3px solid #979797;
+        }
         span{
           display: block;
         }
