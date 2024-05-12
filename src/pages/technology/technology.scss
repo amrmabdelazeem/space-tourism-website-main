@@ -157,10 +157,16 @@
         margin-left: 165.6px - 55px;
         margin-top: 137px;
         margin-right: 80px;
+        cursor: pointer;
 
         span{
           width: 80px;
           height: 80px;
+
+        &:hover{
+          border-color: $text-color;
+        }
+
         }
       }
       .terminology-paragraph{
