@@ -28,7 +28,7 @@ export default function Crew() {
                   style={
                     currentIndex === index
                       ? { backgroundColor: "#ffffff" }
-                      : { backgroundColor: "#979797" }
+                      : { backgroundColor: "#97979750" }
                   }
                 ></span>
               );
