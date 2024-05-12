@@ -133,6 +133,7 @@
       border-radius: 50%;
       display: flex;
       justify-content: center;
+      
       align-items: center;
       transition: all 0.4s;
 
@@ -142,9 +143,9 @@
         cursor: pointer;
       }
       &:hover{
-        background-color: #979797;
         width: 450px;
         height: 450px;
+        background-color: #24262f;
       }
     }
   }
