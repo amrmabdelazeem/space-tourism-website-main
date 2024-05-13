@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar({ onClose, hide }) {
   const routes = ["home", "destination", "crew", "technology"];
   return (
-    <div className="sidebar" style={{ display: hide ? "flex" : "none" }} >
+    <div className="sidebar" style={{ display: hide ? "flex" : "none"}} >
       <button className="menu-btn" role="button" tabIndex="0">
         <svg className="close-menu" width="20" height="21" onClick={onClose}>
           <g fill="#D0D6F9" fillRule="evenodd">
