@@ -1,5 +1,5 @@
 import "./sidebar.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar({ onClose, hide }) {
   const routes = ["home", "destination", "crew", "technology"];
