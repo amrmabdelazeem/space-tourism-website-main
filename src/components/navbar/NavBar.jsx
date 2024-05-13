@@ -4,7 +4,7 @@ export default function Navbar({onOpen, show}) {
 
   return (
     <header className="navbar">
-      <img className="logo" src="/assets/shared/logo.svg" alt="logo" />
+      <img className="logo" src="./assets/shared/logo.svg" alt="logo" />
       <button className="menu-btn" role="button" tabIndex="0" onClick={onOpen}>
         {!show && (
           <svg className="menu-btn" width="24" height="21">
