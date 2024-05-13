@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Destination from "./pages/destination/destination";
 import "./app.scss";
@@ -20,11 +20,11 @@ function App() {
           <Navbar onOpen={handleMenu} show={toggle} />
           <Sidebar onClose={handleMenu} hide={toggle} />
           <Routes>
-            <Route path={"/"} element={<Home />}></Route>
-            <Route index path={"/home"} element={<Home/>}></Route>
-            <Route path="destination" element={<Destination />}></Route>
-            <Route path="crew" element={<Crew />}></Route>
-            <Route path="technology" element={<Technology />}></Route>
+              <Route path={"/"} element={<Navigate to="/home"/>} ></Route>
+              <Route index path={"/home"} element={<Home />}></Route>
+              <Route path="destination" element={<Destination />}></Route>
+              <Route path="crew" element={<Crew />}></Route>
+              <Route path="technology" element={<Technology />}></Route>
           </Routes>
         </div>
       </Router>
